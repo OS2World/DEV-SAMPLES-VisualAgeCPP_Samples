@@ -1,0 +1,46 @@
+NAME: STRGEN
+
+COPYRIGHT:                                                                           
+----------                                                                           
+Copyright (C) International Business Machines Corp., 1991,1995.                      
+                                                                                     
+DISCLAIMER OF WARRANTIES:                                                            
+-------------------------                                                            
+The following [enclosed] code is sample code created by IBM                          
+Corporation.  This sample code is not part of any standard IBM product               
+and is provided to you solely for the purpose of assisting you in the                
+development of your applications.  The code is provided "AS IS",                     
+without warranty of any kind.  IBM shall not be liable for any damages               
+arising out of your use of the sample code, even if they have been                   
+advised of the possibility of such damages.                                          
+
+
+DESCRIPTION:
+
+Sample of using the IStringGenerator class for translating elements to IStrings
+in the ICollectionViewListBox.  This sample can also be used if you wish to
+populate table records from DAX classes to the ICollectionViewListBox.
+
+The sample consists of 2 parts, a visual part (strgen) and a non-visual part (Customer)
+
+TASKs:
+
+1) build Customer non-visual part:
+   - see Customer non-visual part from strgen.vbb for more details.
+   - save&generate part-source.
+
+2) build strgen visual part:
+   - see strgen visual part from strgen.vbb for more details
+   - save&generate part-source
+   - save&generate main for part
+   - declare and define the nested class for IStringGenerator, see strgen.hpv and
+      strgen.cpv more details.
+
+3) build the target:
+   - run NMAKE against strgen.mak
+
+Feedback:
+
+  - The sample was built by Brian Luc with help from Philippe Gregoire
+  - Any feedback or question, drop a mail to BLUC@VNET.IBM.COM
+

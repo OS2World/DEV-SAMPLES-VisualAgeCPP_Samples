@@ -1,0 +1,69 @@
+
+
+// Feature source code generation begins here...
+INotificationId Customer::NameId = "Customer::name";
+INotificationId Customer::StreetId = "Customer::street";
+INotificationId Customer::CityId = "Customer::city";
+INotificationId Customer::PhoneId = "Customer::phone";
+
+IString Customer::Name() const
+{
+  return iName;
+}
+
+Customer& Customer::setName(const IString& aName)
+{
+  if (!(iName == aName))
+  {
+    iName = aName;
+    notifyObservers(INotificationEvent(Customer::NameId, *this));
+  } // endif
+  return *this;
+}
+
+IString Customer::Street() const
+{
+  return iStreet;
+}
+
+Customer& Customer::setStreet(const IString& aStreet)
+{
+  if (!(iStreet == aStreet))
+  {
+    iStreet = aStreet;
+    notifyObservers(INotificationEvent(Customer::StreetId, *this));
+  } // endif
+  return *this;
+}
+
+IString Customer::City() const
+{
+  return iCity;
+}
+
+Customer& Customer::setCity(const IString& aCity)
+{
+  if (!(iCity == aCity))
+  {
+    iCity = aCity;
+    notifyObservers(INotificationEvent(Customer::CityId, *this));
+  } // endif
+  return *this;
+}
+
+IString Customer::Phone() const
+{
+  return iPhone;
+}
+
+Customer& Customer::setPhone(const IString& aPhone)
+{
+  if (!(iPhone == aPhone))
+  {
+    iPhone = aPhone;
+    notifyObservers(INotificationEvent(Customer::PhoneId, *this));
+  } // endif
+  return *this;
+}
+
+// Feature source code generation ends here.

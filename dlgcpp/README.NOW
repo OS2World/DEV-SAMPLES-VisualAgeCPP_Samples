@@ -1,0 +1,27 @@
+*********************************************************************
+* "Manipulating Dialogues in C++" - OS/2 Developer Sept/Aug '95     *
+* August 30, 1995                                                   *
+*********************************************************************
+
+- Sample has been designed for and built with the VisualAge C++ for OS/2
+  product.  With a few minor modifications, it should work with the
+  C Set++ product:
+     1) Romoval of mouse wait pointer support.
+     2) Removal of circular slider support.
+     3) Modification of spin button support to use the ISpinButton class.
+
+- If the driver program throws an exception when you start it, you need
+  to apply CSD1 (CTO301), to fix a bug in the INumericSpinButton
+  constructor.
+
+- The icon control background may initially paint black.  We think this
+  is due to a bug in PM.  If you force a repaint of the dialogue, the
+  background will properly paint.
+
+If you have any problems, please contact us.
+
+Enjoy!
+Mark Benge
+Matt Smith
+
+

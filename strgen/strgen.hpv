@@ -1,0 +1,12 @@
+
+public:
+ // nested class to implement a string generator
+ // for Customer
+
+ class strgenFn: public IStringGeneratorFn<Customer*>
+  {
+   public:
+    // string generation function
+    IString stringFor(Customer* const& element);
+  };
+

@@ -1,0 +1,58 @@
+
+#define INCL_WINSYS
+#define INCL_WINSTDDLGS
+#define INCL_WINSTDSPIN
+#define INCL_NLS
+#define INCL_SW
+
+#include <os2.h>
+#include <os2me.h>
+
+#include "driver.h"
+
+ICON        ICO_TEST cat.ico
+
+DLGTEMPLATE DLG_SAMPLEDIALOGUE 850 MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG "Sample Dialogue", DLG_SAMPLEDIALOGUE, 10, 39, 200, 145,
+                FS_NOBYTEALIGN | FS_DLGBORDER | WS_CLIPSIBLINGS | WS_SAVEBITS |
+                WS_VISIBLE, FCF_TITLEBAR | FCF_SYSMENU
+    BEGIN
+        CONTROL "Query",               PB_QUERY, 152, 101, 38, 12, WC_BUTTON,
+                                            BS_PUSHBUTTON | WS_TABSTOP |
+                                            WS_VISIBLE
+        CONTROL "Cancel",              DID_CANCEL, 152, 82, 38, 12, WC_BUTTON,
+                                            BS_PUSHBUTTON | WS_TABSTOP |
+                                            WS_VISIBLE
+        CONTROL "Volume",              CSLD_VALUE, 9, 11, 48, 40,
+                                            WC_CIRCULARSLIDER, WS_VISIBLE
+        CONTROL "",                    EF_TEST, 13, 63, 41, 10, WC_ENTRYFIELD,
+                                            ES_MARGIN | WS_TABSTOP | WS_VISIBLE
+                CTLDATA 8, 32, 0, 0
+        CONTROL "",                    MLE_TEST, 72, 9, 118, 44, WC_MLE,
+                                            MLS_BORDER | MLS_HSCROLL |
+                                            MLS_IGNORETAB | MLS_VSCROLL |
+                                            WS_TABSTOP | WS_VISIBLE
+                CTLDATA 28, 0, 65535, 65535, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x8000, 0x0001
+        CONTROL "",                    LB_TEST, 80, 101, 59, 35, WC_LISTBOX,
+                                            LS_NOADJUSTPOS | WS_VISIBLE
+        CONTROL "",                    CB_TEST, 11, 100, 64, 36, WC_COMBOBOX,
+                                            CBS_SIMPLE | WS_GROUP | WS_VISIBLE
+        CONTROL "",                    SPB_TEST, 88, 82, 43, 12, WC_SPINBUTTON,
+                                            SPBS_MASTER | SPBS_JUSTRIGHT |
+                                            SPBS_NUMERICONLY | WS_TABSTOP |
+                                            WS_VISIBLE
+        CONTROL "",                    SLD_TEST, 70, 59, 122, 16, WC_SLIDER,
+                                            SLS_HORIZONTAL | SLS_CENTER |
+                                            SLS_BUTTONSLEFT | SLS_HOMELEFT |
+                                            SLS_READONLY | SLS_RIBBONSTRIP |
+                                            SLS_PRIMARYSCALE1 | WS_TABSTOP |
+                                            WS_VISIBLE
+                CTLDATA 12, 0, 51, 5, 35, 5
+        CONTROL ICO_TEST,              ICO_TEST, 161, 121, 18, 15, WC_STATIC,
+                                            SS_ICON | WS_VISIBLE
+        CONTROL "LB item query",       ST_TEXT, 10, 82, 60, 8, WC_STATIC,
+                                            SS_TEXT | WS_GROUP | WS_VISIBLE
+    END
+END
+

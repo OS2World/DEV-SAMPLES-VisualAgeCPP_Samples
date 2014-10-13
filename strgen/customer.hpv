@@ -1,0 +1,24 @@
+
+
+// Feature source code generation begins here...
+public:
+  virtual IString Name() const;
+  virtual Customer& setName(const IString& aName);
+  virtual IString Street() const;
+  virtual Customer& setStreet(const IString& aStreet);
+  virtual IString City() const;
+  virtual Customer& setCity(const IString& aCity);
+  virtual IString Phone() const;
+  virtual Customer& setPhone(const IString& aPhone);
+
+  static INotificationId NameId;
+  static INotificationId StreetId;
+  static INotificationId CityId;
+  static INotificationId PhoneId;
+
+private:
+  IString iName;
+  IString iStreet;
+  IString iCity;
+  IString iPhone;
+// Feature source code generation ends here.

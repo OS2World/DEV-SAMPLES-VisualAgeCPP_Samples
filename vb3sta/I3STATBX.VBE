@@ -1,0 +1,54 @@
+//
+//  Part Name: I3StateCheckBox
+//  Part Type: visual
+//  Date/Time: (11-29-95 12:41:02 PM)
+//  Release:   IBM VisualAge C++ Version 3.0 for OS/2
+//
+//VBBeginPartInfo: I3StateCheckBox, "IBM 3-state check-box control"
+//VBParent: ISettingButton
+//VBIncludes: <i3statbx.hpp> _I3STATBX_
+//VBPartDataFile: 'i3statbx.vbb'
+//VBComposerInfo: visual, 323, dde4vr30, primitive, dde4vi30
+//VBSettingsPages: AvlRadioButtonAttributesPage, AvlControlViewAttributesPage, AvlCheckBoxStylesAttributesPage, AvlHandlerAttributesPage, AvlButtonViewColorAttributesPage, AvlSizePositionAttributesPage, AvlFontAttributesPage
+//VBFlagInfo: Style, defaultStyle(), IWindow, IControl, IButton
+//VBComposerTextSetting: text, UsePartName
+//
+//  NOTE: Use visual default constructor.
+//
+//VBAttribute: defaultStyle,
+//VB:          "Returns the current default style.",
+//VB:          I3StateCheckBox::Style,
+//VB:          static Style defaultStyle(),
+//VB:          static void setDefaultStyle(const Style& defaultStyle)
+//VB:          ,, NOCONNECT
+//VBAttribute: autoSelect,
+//VB:          "If the three-state check box control has the autoSelect style set, true is returned.",
+//VB:          Boolean,
+//VB:          virtual Boolean isAutoSelect() const,
+//VB:          virtual I3StateCheckBox& enableAutoSelect(Boolean autoSelect = true)
+//VBFlagAttribute: Style, autoSelect,,autoSelect
+//
+//VBAttribute: halftone,
+//VB:          "If the three-state check box control has been selected as halftone, true is returned.",
+//VB:          Boolean,
+//VB:          Boolean isHalftone() const
+//VBAction: asGUIStyle
+//VB:       ,"Converts style bits into style recognizeable by the GUI.", unsigned long,
+//VB:       virtual unsigned long asGUIStyle(const IBitFlag& style, Boolean extended = false)
+//VBAction: disableAutoSelect
+//VB:       ,"Removes the autoSelect style from the three-state check box control.",,
+//VB:       virtual I3StateCheckBox& disableAutoSelect()
+//VBAction: selectHalftone
+//VB:       ,"Selects a halftone three-state check box control.",,
+//VB:       I3StateCheckBox& selectHalftone()
+//VBAttribute: style,, I3StateCheckBox::Style,,,, NOCONNECT
+//VBPreferredFeatures: this, buttonClickedEvent, menu, selected, text, textLength, disable, enable, setFocus
+//VBEndPartInfo: I3StateCheckBox
+//
+//VBBeginTypedefInfo: I3StateCheckBox::Style
+//VBIncludes: <I3STATBX.HPP> _I3STATBX_
+//VBPartDataFile: 'i3statbx.vbb'
+//VBComposerClass: AvlBitFlag
+//VBEndTypedefInfo: I3StateCheckBox::Style
+//
+

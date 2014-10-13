@@ -1,0 +1,16 @@
+#define DLG_SAMPLEDIALOGUE 256
+#define PB_QUERY 260
+#define CSLD_VALUE 261
+#define EF_TEST 262
+#define MLE_TEST 264
+#define LB_TEST 265
+#define CB_TEST 271
+#define SPB_TEST 273
+#define SLD_TEST 275
+#define ICO_TEST 276
+#define ST_TEXT 277
+
+#define ID_MYFRAME 1000
+#define ID_CREATEBUTTON 1001
+
+

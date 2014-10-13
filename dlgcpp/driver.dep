@@ -1,0 +1,32 @@
+INCLUDE001=.
+INCLUDE001=$(INCLUDE001);$(INCLUDE)
+
+INCLUDE000=$(INCLUDE)
+
+
+driver.OBJ:  driver.CPP  \
+   {$(INCLUDE001)}driver.hpp  \
+   {$(INCLUDE001)}driver.h  \
+   {$(INCLUDE001)}drivhdr.hpp  \
+   {$(INCLUDE001)}dialog.hpp  \
+   driver.MAK
+
+
+drivhdr.OBJ:  drivhdr.CPP  \
+   {$(INCLUDE001)}drivhdr.hpp  \
+   {$(INCLUDE001)}driver.h  \
+   {$(INCLUDE001)}driver.hpp  \
+   {$(INCLUDE001)}dialog.hpp  \
+   driver.MAK
+
+
+dialog.OBJ:  dialog.CPP  \
+   {$(INCLUDE001)}dialog.hpp  \
+   driver.MAK
+
+Driver.Res: Driver.Rc \
+   {$(INCLUDE001)}driver.h  \
+   {$(INCLUDE001)}Cat.ico  \
+   driver.Mak
+
+
